@@ -3,10 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bold Ideations</title>
+    <title>Bold Ideations LLC</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: #0f0f0f; color: #f0f0f0; font-family: Georgia, sans-serif; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid #2a2a2a; }
+        .nav-logo { font-size: 18px; font-weight: bold; color: #f0f0f0; }
+        .nav-links { display: flex; gap: 28px; }
+        .nav-links a { font-size: 14px; color: #888; text-decoration: none; }
+        .nav-links a:hover { color: #EF9F27; }
+        .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 340px; border-bottom: 1px solid #2a2a2a; }
+        .hero-left { padding: 48px 40px; display: flex; flex-direction: column; justify-content: center; }
+        .hero-tag { display: inline-block; font-size: 11px; color: #EF9F27; background: #1a1500; border: 1px solid #854F0B; border-radius: 20px; padding: 4px 14px; margin-bottom: 20px; letter-spacing: 0.06em; width: fit-content; }
+        .hero-left h1 { font-size: 36px; font-weight: bold; line-height: 1.2; color: #f0f0f0; margin-bottom: 14px; }
+        .hero-left h1 span { color: #EF9F27; }
+        .hero-left p { font-size: 15px; color: #888; line-height: 1.8; margin-bottom: 24px; }
+        .hero-btns { display: flex; gap: 12px; }
+        .btn-primary { background: #854F0B; color: #f0f0f0; border: none; padding: 10px 22px; border-radius: 8px; font-size: 14px; cursor: pointer; }
+        .btn-primary:hover { background: #EF9F27; }
+        .btn-secondary { background: transparent; color: #f0f0f0; border: 1px solid #444; padding: 10px 22px; border-radius: 8px; font-size: 14px; cursor: pointer; }
+        .btn-secondary:hover { border-color: #EF9F27; color: #EF9F27; }
+        .hero-right { display: flex; align-items: center; justify-content: center; padding: 40px; background: #0a0a0a; border-left: 1px solid #2a2a2a; }
+        .hero-right img { width: 100%; max-width: 320px; border-radius: 12px; transform: perspective(800px) rotateY(-6deg) rotateX(3deg); }
+        .section { padding: 40px 40px; border-bottom: 1px solid #2a2a2a; }
+        .section-label { font-size: 11px; color: #555; letter-spacing: 0.1em; margin-bottom: 20px; }
+        .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; padding: 20px; }
+        .card:hover { border-color: #854F0B; }
+        .card h3 { font-size: 14px; font-weight: bold; color: #f0f0f0; margin-bottom: 8px; }
+        .card p { font-size: 13px; color: #666; line-height: 1.6; }
+        footer { padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+        footer p { font-size: 12px; color: #444; }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Bold Ideations</h1>
-    <p>This site is coming soon. Stay tuned!</p>
+    <nav>
+        <div class="nav-logo">Bold Ideations LLC</div>
+        <div class="nav-links">
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="hero-left">
+            <div class="hero-tag">CHICAGO, IL</div>
+            <h1>Ideas worth <span>exploring</span>,<br>projects worth building</h1>
+            <p>Trading, technology, photography, cooking,<br>and everything in between.</p>
+            <div class="hero-btns">
+                <button class="btn-primary">Explore the site</button>
+                <button class="btn-secondary">About me</button>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="card.png" alt="Bold Ideations LLC business card">
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-label">WHAT YOU'LL FIND HERE</div>
+        <div class="cards">
+            <div class="card">
+                <h3>Trading &amp; markets</h3>
+                <p>ES/MES futures, NinjaTrader strategies, and market insights</p>
+            </div>
+            <div class="card">
+                <h3>Tech &amp; projects</h3>
+                <p>Custom apps, tools, and experiments in code</p>
+            </div>
+            <div class="card">
+                <h3>Photography</h3>
+                <p>Capturing moments and perspectives around Chicago</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2026 Bold Ideations LLC</p>
+        <p style="color: #EF9F27;">Chicago, IL</p>
+    </footer>
 </body>
 </html>
