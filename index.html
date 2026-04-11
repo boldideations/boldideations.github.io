@@ -12,19 +12,19 @@
         .nav-links { display: flex; gap: 28px; }
         .nav-links a { font-size: 14px; color: #888; text-decoration: none; }
         .nav-links a:hover { color: #EF9F27; }
-        .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 340px; border-bottom: 1px solid #2a2a2a; }
-        .hero-left { padding: 48px 40px; display: flex; flex-direction: column; justify-content: center; }
+        .hero { display: grid; grid-template-columns: 1fr 1.4fr; min-height: 340px; border-bottom: 1px solid #2a2a2a; }
+        .hero-left { display: flex; align-items: center; justify-content: center; padding: 0; background: #0a0a0a; border-right: 1px solid #2a2a2a; overflow: hidden; }
+        .hero-left img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; transform: perspective(800px) rotateY(6deg) rotateX(3deg); }
+        .hero-right { padding: 48px 40px; display: flex; flex-direction: column; justify-content: center; }
         .hero-tag { display: inline-block; font-size: 11px; color: #EF9F27; background: #1a1500; border: 1px solid #854F0B; border-radius: 20px; padding: 4px 14px; margin-bottom: 20px; letter-spacing: 0.06em; width: fit-content; }
-        .hero-left h1 { font-size: 36px; font-weight: bold; line-height: 1.2; color: #f0f0f0; margin-bottom: 14px; }
-        .hero-left h1 span { color: #EF9F27; }
-        .hero-left p { font-size: 15px; color: #888; line-height: 1.8; margin-bottom: 24px; }
+        .hero-right h1 { font-size: 36px; font-weight: bold; line-height: 1.2; color: #f0f0f0; margin-bottom: 14px; }
+        .hero-right h1 span { color: #EF9F27; }
+        .hero-right p { font-size: 15px; color: #888; line-height: 1.8; margin-bottom: 24px; }
         .hero-btns { display: flex; gap: 12px; }
         .btn-primary { background: #854F0B; color: #f0f0f0; border: none; padding: 10px 22px; border-radius: 8px; font-size: 14px; cursor: pointer; }
         .btn-primary:hover { background: #EF9F27; }
         .btn-secondary { background: transparent; color: #f0f0f0; border: 1px solid #444; padding: 10px 22px; border-radius: 8px; font-size: 14px; cursor: pointer; }
         .btn-secondary:hover { border-color: #EF9F27; color: #EF9F27; }
-        .hero-right { display: flex; align-items: center; justify-content: center; padding: 40px; background: #0a0a0a; border-left: 1px solid #2a2a2a; }
-        .hero-right img { width: 100%; max-width: 320px; border-radius: 12px; transform: perspective(800px) rotateY(-6deg) rotateX(3deg); }
         .section { padding: 40px 40px; border-bottom: 1px solid #2a2a2a; }
         .section-label { font-size: 11px; color: #555; letter-spacing: 0.1em; margin-bottom: 20px; }
         .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
@@ -48,6 +48,9 @@
     </nav>
     <div class="hero">
         <div class="hero-left">
+            <img src="card.png" alt="Bold Ideations LLC business card">
+        </div>
+        <div class="hero-right">
             <div class="hero-tag">CHICAGO, IL</div>
             <h1>Ideas worth <span>exploring</span>,<br>projects worth building</h1>
             <p>Trading, technology, photography, cooking,<br>and everything in between.</p>
@@ -55,9 +58,6 @@
                 <button class="btn-primary">Explore the site</button>
                 <button class="btn-secondary">About me</button>
             </div>
-        </div>
-        <div class="hero-right">
-            <img src="card.png" alt="Bold Ideations LLC business card">
         </div>
     </div>
     <div class="section">
